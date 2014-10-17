@@ -32,6 +32,14 @@ namespace CocoaExtensions
             return image;
         }
 
+        public static string AppVersion
+        {
+            get
+            {
+                return NSBundle.MainBundle.InfoDictionary["CFBundleVersion"].ToString(); 
+            }
+        }
+
         public static string OSVersion
         {
             get
